@@ -5,9 +5,11 @@ one:
   title: MyString
   body: MyText
   game_name: MyString
+  game: one
 
 two:
   username: MyString
   title: MyString
   body: MyText
   game_name: MyString
+  game: two

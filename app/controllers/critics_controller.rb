@@ -69,6 +69,6 @@ class CriticsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def critic_params
-      params.require(:critic).permit(:username, :title, :body, :game_name)
+      params.require(:critic).permit(:username, :title, :body, :game_name, :game_id)
     end
 end

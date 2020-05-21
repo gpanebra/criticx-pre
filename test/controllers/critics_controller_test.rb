@@ -17,7 +17,7 @@ class CriticsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create critic" do
     assert_difference('Critic.count') do
-      post critics_url, params: { critic: { body: @critic.body, game_name: @critic.game_name, title: @critic.title, username: @critic.username } }
+      post critics_url, params: { critic: { body: @critic.body, game_id: @critic.game_id, game_name: @critic.game_name, title: @critic.title, username: @critic.username } }
     end
 
     assert_redirected_to critic_url(Critic.last)
@@ -34,7 +34,7 @@ class CriticsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update critic" do
-    patch critic_url(@critic), params: { critic: { body: @critic.body, game_name: @critic.game_name, title: @critic.title, username: @critic.username } }
+    patch critic_url(@critic), params: { critic: { body: @critic.body, game_id: @critic.game_id, game_name: @critic.game_name, title: @critic.title, username: @critic.username } }
     assert_redirected_to critic_url(@critic)
   end
 

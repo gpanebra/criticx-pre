@@ -6,6 +6,7 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.float :price
       t.date :release_date
       t.string :company_name
+      t.references :company, foreign_key: true
 
       t.timestamps
     end

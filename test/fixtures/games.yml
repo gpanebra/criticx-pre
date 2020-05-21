@@ -6,6 +6,7 @@ one:
   price: 1.5
   release_date: 2020-05-20
   company_name: MyString
+  company: one
 
 two:
   name: MyString
@@ -13,3 +14,4 @@ two:
   price: 1.5
   release_date: 2020-05-20
   company_name: MyString
+  company: two

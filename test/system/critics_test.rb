@@ -15,6 +15,7 @@ class CriticsTest < ApplicationSystemTestCase
     click_on "New Critic"
 
     fill_in "Body", with: @critic.body
+    fill_in "Game", with: @critic.game_id
     fill_in "Game name", with: @critic.game_name
     fill_in "Title", with: @critic.title
     fill_in "Username", with: @critic.username
@@ -29,6 +30,7 @@ class CriticsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Body", with: @critic.body
+    fill_in "Game", with: @critic.game_id
     fill_in "Game name", with: @critic.game_name
     fill_in "Title", with: @critic.title
     fill_in "Username", with: @critic.username

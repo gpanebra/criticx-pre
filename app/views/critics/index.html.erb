@@ -9,6 +9,7 @@
       <th>Title</th>
       <th>Body</th>
       <th>Game name</th>
+      <th>Game</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@
         <td><%= critic.title %></td>
         <td><%= critic.body %></td>
         <td><%= critic.game_name %></td>
+        <td><%= critic.game %></td>
         <td><%= link_to 'Show', critic %></td>
         <td><%= link_to 'Edit', edit_critic_path(critic) %></td>
         <td><%= link_to 'Destroy', critic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
